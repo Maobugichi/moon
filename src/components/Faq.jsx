@@ -5,7 +5,7 @@ export default function Faqs() {
     let prev
     function change(e) {
         const cell = document.querySelectorAll(".grow")
-     if (e.target.src == add) {
+     
         e.target.src = chev
        
         cell.forEach(item => {
@@ -15,19 +15,6 @@ export default function Faqs() {
               item.classList.toggle("hidden") 
         } 
        })
-  
-     } else {
-        e.target.src = add        
-        cell.forEach(item => {
-          
-          if (item.parentNode.nextElementSibling.childNodes[0].src == add) {
-              item.classList.remove("animate-grow")
-              item.classList.add("hidden") 
-        } 
-    })
-       
-     }
-     
 
     }
 

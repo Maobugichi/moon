@@ -17,7 +17,7 @@ export default function SideNav({isClick,setIsClick}) {
                   sideNav.classList.remove("animate-fade")
                   sideNav.classList.remove("animate-fade2")
                   sideNav.classList.add("translate-x-full")
-                 }, 1000)
+                 }, 100)
            
         }
     })
