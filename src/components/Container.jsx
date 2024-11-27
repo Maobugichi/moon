@@ -9,7 +9,7 @@ import SideNav from "./SideNav";
 export default function Container() {
 const [isClick, setIsClick] = useState(false)
   return(
-    <div class="relative overflow-x-hidden w-full">
+    <div className="relative overflow-x-hidden w-full">
       <SideNav
       isClick={isClick}
       setIsClick={setIsClick}

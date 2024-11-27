@@ -1,22 +1,21 @@
 import { useEffect } from "react";
 
 export default function SideNav({isClick,setIsClick}) {
-    console.log(isClick)
     const cancel = document.querySelector(".cancel");
     const sideNav = document.querySelector(".nav-side");
 
     useEffect(() => {
         if (isClick) {
-            sideNav.classList.remove("animate-fade2")
+           
             sideNav.classList.add("animate-fade")
         } 
 
         if (!isClick && sideNav) {
-            
                 sideNav.classList.remove("translate-x-full")
                 sideNav.classList.add("animate-fade2")
                  setTimeout(() => {
                   sideNav.classList.remove("animate-fade")
+                  sideNav.classList.remove("animate-fade2")
                   sideNav.classList.add("translate-x-full")
                  }, 1000)
            
@@ -24,7 +23,7 @@ export default function SideNav({isClick,setIsClick}) {
     })
 
     function setClick() {
-        setIsClick(!isClick)
+        setIsClick(false)
     }
     return(
      <div className="nav-side translate-x-full h-[100vh] fixed lg:hidden   z-10 w-full grid place-items-center gap-11" style={{backgroundColor: "rgba(7,22,36,0.9)"}}> 

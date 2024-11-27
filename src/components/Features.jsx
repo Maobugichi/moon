@@ -7,7 +7,7 @@ export default function Features() {
     return(
       <section className="w-full h-auto min-h-[180vh] lg:min-h-[80vh] bg-[#071624]">
         <div className="w-[90%]  mx-auto flex flex-col gap-10">
-            <h2 className="text-2xl lg:text-[45px] text-center text-[#e4b40d]"><span class="text-[white]">Our</span> Features</h2>
+            <h2 className="text-2xl lg:text-[45px] text-center text-[#e4b40d]"><span className="text-[white]">Our</span> Features</h2>
             <div className="flex lg:flex-row flex-col items-center gap-6">
                 <div className=" flex flex-col gap-5 bg-[#101d29] border-2 border-[#FFFFFF0D] w-[95%]  xl:w-[25%] h-[281px] rounded-lg p-5">
                     <div className="h-[68px] w-[68px] grid place-items-center  bg-[#212f3a] rounded-full">

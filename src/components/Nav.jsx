@@ -1,10 +1,16 @@
+import { useEffect } from "react"
 import logo from "../assets/logo.svg"
 import { motion } from "motion/react"
 
 export default function Nav({isClick, setIsClick}) {
 
+  useEffect(() => {
+    console.log(isClick)
+  },[isClick,setIsClick])
+
   function click() {
     setIsClick(true)
+    
   }
 
     return(
