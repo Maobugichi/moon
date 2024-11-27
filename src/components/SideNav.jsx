@@ -1,12 +1,9 @@
 import { useEffect } from "react";
 
 export default function SideNav({isClick,setIsClick}) {
-    const cancel = document.querySelector(".cancel");
     const sideNav = document.querySelector(".nav-side");
-
     useEffect(() => {
         if (isClick) {
-           
             sideNav.classList.add("animate-fade")
         } 
 
@@ -17,7 +14,7 @@ export default function SideNav({isClick,setIsClick}) {
                   sideNav.classList.remove("animate-fade")
                   sideNav.classList.remove("animate-fade2")
                   sideNav.classList.add("translate-x-full")
-                 }, 100)
+                 }, 900)
            
         }
     })

@@ -2,19 +2,28 @@ import fold from "../assets/fold.png"
 import add from "../assets/add.svg"
 import chev from "../assets/chev.svg"
 export default function Faqs() {
-    let prev
     function change(e) {
-        const cell = document.querySelectorAll(".grow")
-     
+    const cell = document.querySelectorAll(".grow")
+     if (e.target.src == add) {
         e.target.src = chev
-       
         cell.forEach(item => {
-          
           if (item.parentNode.nextElementSibling.childNodes[0].src == chev) {
               item.classList.add("animate-grow")
-              item.classList.toggle("hidden") 
+              item.classList.remove("hidden") 
         } 
        })
+  
+     } else {
+        e.target.src = add        
+        cell.forEach(item => {
+          if (item.parentNode.nextElementSibling.childNodes[0].src == add) {
+              item.classList.remove("animate-grow")
+              item.classList.add("hidden") 
+        } 
+    })
+       
+     }
+     
 
     }
 
